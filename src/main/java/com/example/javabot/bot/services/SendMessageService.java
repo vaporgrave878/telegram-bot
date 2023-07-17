@@ -28,13 +28,13 @@ public class SendMessageService {
                 .requestContact(true)
                 .build());
         row1.add("Unsubscribe");
-        row1.add("Для Єви");
+        row1.add("Test");
         keyboardRows.add(row1);
         replyKeyboardMarkup.setKeyboard(keyboardRows);
         replyKeyboardMarkup.setResizeKeyboard(true);
         replyKeyboardMarkup.setOneTimeKeyboard(true);
         SendMessage sendMessage = new SendMessage();
-        sendMessage.setText("Єва наймиліше сонечко!");
+        sendMessage.setText("Test Message!");
         sendMessage.setChatId(String.valueOf(message.getChatId()));
         sendMessage.setReplyMarkup(replyKeyboardMarkup);
         messageSender.sendMessage(sendMessage);
